@@ -1,259 +1,117 @@
-# ITnews
- * [ITnews](#itnews)
-  * [一、项目概述](#一项目概述)
-  * [二、功能详情](#二功能详情)
-    * [版本自动检测更新](#版本自动检测更新)
-    * [登陆与注册](#登陆与注册)
-    * [底部导航栏](#底部导航栏)
-      * [新闻](#新闻)
-      * [轮播图](#轮播图)
-      * [消息(本地数据库开发)](#消息本地数据库开发)
-      * [个人](#个人)
-    * [新闻详情页](#新闻详情页)
-    * [新闻发布界面](#新闻发布界面)
-    * [用户信息修改](#用户信息修改)
-      * [头像](#头像)
-      * [昵称](#昵称)
-      * [性别](#性别)
-      * [个人简介](#个人简介)
-      * [修改密码](#修改密码)
-    * [忘记密码](#忘记密码)
-    * [项目附加处理](#项目附加处理)
-  * [三、项目时间安排(仅供参考)](#三项目时间安排仅供参考)
-## 一、项目概述
-   ITnews是由2021年3月由中国海洋大学爱特工作室开发的一款小型新闻类APP。从设计到产品开发与测试累计用时一个月。
-- **项目名称**:ITnews
+# 时光相册
 
-- **开发组人员**：UI:吴慧敏 程序:刘召 APP：张凯 王子懿 黄博斌
-- **项目经理:**黄博斌
-- **设计目标**: 设计一款新闻类APP，能够即时查看新闻与发布新闻，用户可以关注作者，收藏文章等
+## 1.项目简介
 
+时光相册是一款用于记录有意义的相片的地方。你可以在这里查看属于自己的回忆~
 
 
-## 二、功能详情
+![image-20220901125132579](https://user-images.githubusercontent.com/72655347/187847873-f8b75b43-8e6f-4516-ba29-8620713eb020.png)
 
-### 版本自动检测更新
+## 用户模块
 
-打开APP进入欢迎界面时，检测软件版本，若不为最新版本则弹窗提示更新。
+### 登陆
 
-### 登陆与注册
+![image-20220901125339400](https://user-images.githubusercontent.com/72655347/187847917-bbe9dde0-9db4-4b09-81ec-c28870e799b2.png)
 
-若用户此前未登陆账号，则跳转至登陆界面。若无账号，则点击注册，注册账号。
 
-注册账号时填写邮箱获取验证码，获取成功后填写账号密码则注册成功
+### 注册
 
-### 底部导航栏
+![image-20220901125429790](https://user-images.githubusercontent.com/72655347/187847961-20cb70e6-f304-4714-b8da-520411ecf490.png)
 
-登陆之后进入APP主界面，在屏幕下方有一个底部导航栏。分别为(新闻，消息，我的文章，个人)
 
-#### 新闻
+### 个人界面
 
-新闻区分为两个板块，关注与推荐(可参考新浪微博的首页)
+![image-20220901125619873](https://user-images.githubusercontent.com/72655347/187847999-7b0152e7-84ad-49c1-9e01-d12c0c67e05d.png)
 
-推荐部分的新闻会有后台算法对每个用户有不同推送
 
-关注部分显示你关注的作者发布的新闻内容
+### 修改
 
-每条新闻由标题和封面图片两部分组成，点击新闻跳转新闻详情页
+![image-20220901125644986](https://user-images.githubusercontent.com/72655347/187848030-0dd86eed-8fae-4216-a1bb-849b878faa07.png)
 
-上拉加载，下拉刷新新闻
 
-#### 轮播图
+## 功能模块
 
-在新闻界面推荐部分，滚动4张新闻图片
+### 图片展示
+![image-20220901125745536](https://user-images.githubusercontent.com/72655347/187848051-21432958-2ecf-4348-89d2-62a339b13913.png)
 
-#### 消息(本地数据库开发)
 
-对用户操作进行提示信息。（如关注，发布文章，评论)
+### 上传图片
 
-在未读消息时做出提示(参考QQ的红点)
+![image-20220901125830259](https://user-images.githubusercontent.com/72655347/187848082-6511d4d5-eb90-4b6b-a7db-7acc70e8404c.png)
 
-#### 个人
+![image-20220901125859677](https://user-images.githubusercontent.com/72655347/187848161-69202a06-e0f6-463c-8c1d-464fe77652a3.png)
 
-显示个人头像，昵称，性别，关注量，粉丝量，收藏文章数，个人简介，邮箱等信息
 
-### 新闻详情页
+## 2.当前完成情况
 
-新闻详情页上方显示文章标题，作者，作者头像
+基本功能已完成
 
-下方显示文章内容，图片，图片以九宫格的方式呈现(第一张图片默认为封面图片)
+## 3.控件与技术
 
-页面底部设置一个功能区(点赞，收藏，和评论)
+### Activity
 
-文章内容结束后下方显示对该文章的所用评论(只有短评)
+![image-20220901124819520](https://user-images.githubusercontent.com/72655347/187848222-e5095956-27f0-4a5e-bb89-48f1f6ca3b53.png)
 
-### 新闻发布界面
 
-新闻发布(参考微信发布朋友圈)
+共用了三个6个activity
 
-### 用户信息修改
+## fragment
 
-#### 头像
+![image-20220901124905594](https://user-images.githubusercontent.com/72655347/187848248-7080bcc4-93fb-4384-a1ed-85d020d1244f.png)
 
-在用户界面点击头像，弹出对话框。选择拍照和相册选取之后裁剪图片即可修改
+fragment是activity的碎片，常用于一个活动中的不同界面
 
-#### 昵称
+## 适配器模式
 
-点击昵称跳转昵称修改界面(参考微信)
+![image-20220901125016287](https://user-images.githubusercontent.com/72655347/187848271-9be9f190-99b2-4089-89f7-5858798ad20f.png)
 
-#### 性别
+使用了设计模式中的适配器模式结合RecycleView实现重复item加载
 
-点击性别弹出对话框，选择男女即可
+### 九宫格技术
 
-#### 个人简介
+利用adapter嵌套实现了仿九宫格
 
-点击个人简介跳转至修改界面(参考微信)
+参考博客[安卓九宫格上传图片(微信朋友圈，QQ动态)小demo](https://blog.csdn.net/Karthus77/article/details/115396118)
 
-#### 修改密码
+## 4.测试及上线情况
 
-如要修改密码，点击个人信息中的修改密码，跳转至修改密码界面
+### 输入bug测试
 
-经过邮箱和原密码验证后即可修改密码
+app测试功能正常，利用正则表达式实现前端的输入判断
 
-### 忘记密码
+```java
+public boolean checkUsername(String str) {
+        String regexp = "^[0-9a-zA-Z]{6,12}$";
+        Pattern pattern = Pattern.compile(regexp);
+        Matcher matcher = pattern.matcher(str);
+        return matcher.matches();
+    }
 
-在登陆界面选择忘记密码
+    public boolean checkPassword(String str) {
+        String regexp = "^[0-9a-zA-Z]{6,12}$";
+        Pattern pattern = Pattern.compile(regexp);
+        Matcher matcher = pattern.matcher(str);
+        return matcher.matches();
+    }
+```
 
-跳转至忘记密码界面
+### 竖屏bug测试
 
-输入邮箱和验证码后设置新密码
+```xml
+ <activity android:name=".Activity.WriteActivity"
+            android:screenOrientation="portrait"/>
+```
 
-###  项目附加处理
+### 断网功能测试
 
-断网状态下给出对应提示信息
+![image-20220901132635920](https://user-images.githubusercontent.com/72655347/187848301-38ef77a9-36ee-4182-8b59-3edde5275fb7.png)
+## 5.实际遇到的问题
 
-项目禁止横屏状态
+在联网过程中在Activity由于需要实时加载一些图片的问题。可能会涉及到activity和fragment生命周期的问题，通过使用onResume和不断debug调试解决了问题
 
-项目的输入信息格式由前后端按统一标准控制
+## 6.心得体会
 
+在重构项目的过程中，使得我更加熟悉了开发的前后端流程，跟之前的开发对比，也显得轻车熟路，游刃有余。在大一时我也曾给同学写过APP当生日礼物，我认为的浪漫是一种生活的情调，随手拍照是浪漫，回宿舍给室友带杯饮料是浪费，餐厅打饭给阿姨说一声谢谢也是浪漫，其实很多时候都可以很浪漫~
 
-
-## 三、项目时间安排(仅供参考)
-
-| 3.7-3.14       | 项目设计文档，接口文档，数据库设计文档与APP项目基本框架搭建 |
-| -------------- | ----------------------------------------------------------- |
-| **3.14-3.21**  | **后端接口部署与APP设计同步进行**                           |
-| **3.21 -3.28** | **后端接口全部部署完毕，前段完成项目主体结构**              |
-| **3.28-4.4**   | **项目调试与完善**                                          |
-
-# ITnews
-* [ITnews](#itnews)
-  * [1、 Project overview](#1-project-overview)
-  * [2、 Function details](#2-function-details)
-    * [Automatic version detection update](#automatic-version-detection-update)
-    * [Login and registration](#login-and-registration)
-    * [Bottom navigation bar](#bottom-navigation-bar)
-      * [News](#news)
-      * [Carousel map](#carousel-map)
-      * [Message (local database development)](#message-local-database-development)
-      * [Individuals](#individuals)
-    * [News details page](#news-details-page)
-    * [News release interface](#news-release-interface)
-    * [User information modification](#user-information-modification)
-      * [Head portrait](#head-portrait)
-      * [Nickname](#nickname)
-      * [Gender](#gender)
-      * [Personal profile](#personal-profile)
-      * [Change password](#change-password)
-    * [Forget the password](#forget-the-password)
-    * [Project additional processing](#project-additional-processing)
-  * [3、 Project schedule (for reference only)](#3-project-schedule-for-reference-only)
-
-## 1、 Project overview
-
-- ITnews is a small news app developed by IT studio of Ocean University of China in March 2021. It takes one month from design to product development and testing.
-
-**project name**: ITnews
-
-
-
-- **development team member**: UI: Wu Huimin program: Liu Zhao app: Zhang Kai, Wang Ziyi, Huang Bobin
-
-- **Project Manager**: Huang Bobin
-
-- **design objective**: design a news app, which can instantly view and release news, and users can pay attention to the author, collect articles, etc
-
-## 2、 Function details
-### Automatic version detection update
-When you open the app and enter the welcome interface, check the software version. If it is not the latest version, the pop-up window will prompt you to update.
-
-### Login and registration
-
-If the user has not logged in before, jump to the login interface. If there is no account, click Register to register the account.
-When you register an account, fill in the email to get the verification code. When you succeed, fill in the account password to register successfully
-
-### Bottom navigation bar
-
-After login, enter the app main interface, and there is a bottom navigation bar at the bottom of the screen. They are (news, news, my article, personal)
-
-#### News
-
-News is divided into two parts, attention and recommendation (please refer to the homepage of sina Weibo)
-There will be a background algorithm for the news of the recommendation part, which has different push for each user
-The following section shows the news content published by the author you follow
-Each news consists of a title and a cover image. Click news to jump to the news details page
-Pull up to load, pull down to refresh news
-
-#### Carousel map
-In the recommendation section of the news interface, scroll 4 news pictures
-
-#### Message (local database development)
-Prompt information for user operation. (e.g. follow, post, comment)
-Prompt when not reading the message (refer to the red dot of QQ)
-
-#### Individuals
-Display personal profile, nickname, gender, attention, fans, number of collected articles, profile, email and other information
-
-### News details page
-At the top of the news details page, the title of the article, the author, and the portrait of the author are displayed
-The content and pictures of the article are displayed below in the form of nine palace grid (the first picture is the cover picture by default)
-Comments and favorites (one at the bottom)
-After the end of the article, the comments on the article (only short comments) will be displayed below
-
-### News release interface
-Press release (refer to wechat publishing circle of friends)
-
-### User information modification
-
-#### Head portrait
-Click the avatar in the user interface to pop up the dialog box. Select photo and album, then cut the picture and modify it
-
-#### Nickname
-
-Click the nickname to jump to the nickname modification interface (refer to wechat)
-#### Gender
-Click gender to pop up the dialog box and select male and female
-
-#### Personal profile
-Click personal profile to jump to the modification interface (refer to wechat)
-
-#### Change password
-To modify the password, click modify password in personal information to jump to modify password interface
-
-After the mailbox and the original password verification, you can change the password
-### Forget the password
-Select forget password in login interface
-Jump to forget password interface
-Set a new password after entering the email and verification code
-
-### Project additional processing
-- The corresponding prompt information is given in the state of disconnection
-- Item no horizontal screen status
-- The input information format of the project is controlled by the front and back end according to the unified standard
-
-## 3、 Project schedule (for reference only)
-
-| **3.7-3.14**   |  **project design documents, interface documents, database design documents and basic framework construction of APP project** |
-| -------------- | ----------------------------------------------------------- |
-| **3.14-3.21**  | **back end interface deployment is synchronized with App Design**                           |
-| **3.21 -3.28** | **all back-end interfaces have been deployed, and the main structure of the project has been completed in the previous stage**              |
-| **3.28-4.4**   | **project commissioning and improvement**                                          |
-
-
-
-
-
-
-
-
+参考博客[【Android实战-03(淘宝类APP)】](https://blog.csdn.net/Karthus77/article/details/113865169)
 
