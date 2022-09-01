@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ITnews</string>
+    <string name="itnews">《ITnews用户服务协议》</string>
+    <string name="hello_blank_fragment">hello_blank_fragment</string>
+    <string name="account">用户名</string>
+    <string name="password">密码</string>
+</resources>

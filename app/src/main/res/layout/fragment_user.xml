@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.UserFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@drawable/yellowbackground">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/user_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/defalut_head">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_head"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:text="用户34699"
+            android:layout_marginTop="10sp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/user_sex"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@id/user_head"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@id/user_name">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/user_name"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/whiteback"
+            android:layout_marginTop="100dp">
+
+            <ImageView
+                android:id="@+id/information"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/information">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/user_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@id/information"
+                android:text="用户信息"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_information"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/information"
+                android:text="查看或修改你的个人信息">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/revise"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/arrow">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/out"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+
+            android:background="@drawable/outstyle">
+
+            <ImageView
+                android:id="@+id/outIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/outwhite">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/outIcon"
+                android:text="退出登录"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </TextView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

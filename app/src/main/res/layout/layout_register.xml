@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegisterActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow">
+
+        <RelativeLayout
+            android:id="@+id/register_top"
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <ImageView
+                android:id="@+id/backToLogin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/back">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/smile"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_below="@id/register_top"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/smile">
+
+        </ImageView>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/smile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:digits="0123456789abcdefghijklmnopqrstuvwxyz"
+            android:hint=" 用户名(8-20位)"
+            android:maxLength="20">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordone"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:hint=" 密码(8-20位)"
+            android:inputType="textPassword"
+            android:maxLength="20">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordtwo"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:hint=" 确认密码(8-20位)"
+            android:inputType="textPassword"
+            android:maxLength="20">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordtwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:hint=" 请输入邮箱账号"
+            android:inputType="textEmailAddress"
+            android:maxLength="24">
+
+        </EditText>
+
+
+        <LinearLayout
+            android:id="@+id/ma"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/verify"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="4" />
+
+            <Button
+                android:id="@+id/getverify"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginEnd="9dp"
+                android:background="@drawable/buttonbox"
+                android:text="获取验证码"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/sign_up"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ma"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stylelogin"
+            android:text="注    册"
+            android:textSize="20dp">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Welcome to join us !"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/lego"></ImageView>
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:hint=" 用户名"
+            android:textColorHint="#A6A4A4"
+            android:maxLength="20">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/translucent"
+            android:hint=" 密码"
+            android:textColorHint="#A6A4A4"
+            android:inputType="textPassword"
+            android:maxLength="20">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/gogo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/et2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/stylelogin"
+            android:text="登    陆"
+            android:textSize="20dp">
+
+        </Button>
+        <TextView
+            android:id="@+id/login_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即注册"
+            android:layout_below="@id/gogo"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="70sp"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp">
+
+        </TextView>
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
