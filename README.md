@@ -1,45 +1,47 @@
 # 时光相册
-
+- 2022夏季学期移动软件开发作业
 ## 1.项目简介
 
 时光相册是一款用于记录有意义的相片的地方。你可以在这里查看属于自己的回忆~
 
 
-![image-20220901125132579](https://user-images.githubusercontent.com/72655347/187847873-f8b75b43-8e6f-4516-ba29-8620713eb020.png)
+<img src="https://user-images.githubusercontent.com/72655347/187847873-f8b75b43-8e6f-4516-ba29-8620713eb020.png" width="20%">
 
 ## 用户模块
 
 ### 登陆
 
-![image-20220901125339400](https://user-images.githubusercontent.com/72655347/187847917-bbe9dde0-9db4-4b09-81ec-c28870e799b2.png)
+<img src="https://user-images.githubusercontent.com/72655347/187847917-bbe9dde0-9db4-4b09-81ec-c28870e799b2.png" width="20%">
 
 
 ### 注册
 
-![image-20220901125429790](https://user-images.githubusercontent.com/72655347/187847961-20cb70e6-f304-4714-b8da-520411ecf490.png)
+<img src="https://user-images.githubusercontent.com/72655347/187847961-20cb70e6-f304-4714-b8da-520411ecf490.png" width="20%">
 
 
 ### 个人界面
 
-![image-20220901125619873](https://user-images.githubusercontent.com/72655347/187847999-7b0152e7-84ad-49c1-9e01-d12c0c67e05d.png)
+<img src="https://user-images.githubusercontent.com/72655347/187847999-7b0152e7-84ad-49c1-9e01-d12c0c67e05d.png" width="20%">
 
 
 ### 修改
 
-![image-20220901125644986](https://user-images.githubusercontent.com/72655347/187848030-0dd86eed-8fae-4216-a1bb-849b878faa07.png)
+<img src="https://user-images.githubusercontent.com/72655347/187848030-0dd86eed-8fae-4216-a1bb-849b878faa07.png" width="20%">
 
 
 ## 功能模块
 
 ### 图片展示
-![image-20220901125745536](https://user-images.githubusercontent.com/72655347/187848051-21432958-2ecf-4348-89d2-62a339b13913.png)
+
+<img src="https://user-images.githubusercontent.com/72655347/187848051-21432958-2ecf-4348-89d2-62a339b13913.png" width="20%">
 
 
 ### 上传图片
 
-![image-20220901125830259](https://user-images.githubusercontent.com/72655347/187848082-6511d4d5-eb90-4b6b-a7db-7acc70e8404c.png)
+<img src="https://user-images.githubusercontent.com/72655347/187848082-6511d4d5-eb90-4b6b-a7db-7acc70e8404c.png" width="20%">
 
-![image-20220901125859677](https://user-images.githubusercontent.com/72655347/187848161-69202a06-e0f6-463c-8c1d-464fe77652a3.png)
+<img src="https://user-images.githubusercontent.com/72655347/187848161-69202a06-e0f6-463c-8c1d-464fe77652a3.png" width="20%">
+
 
 
 ## 2.当前完成情况
@@ -50,20 +52,20 @@
 
 ### Activity
 
-![image-20220901124819520](https://user-images.githubusercontent.com/72655347/187848222-e5095956-27f0-4a5e-bb89-48f1f6ca3b53.png)
+<img src="https://user-images.githubusercontent.com/72655347/187848222-e5095956-27f0-4a5e-bb89-48f1f6ca3b53.png" width="20%">
 
 
 共用了三个6个activity
 
 ## fragment
 
-![image-20220901124905594](https://user-images.githubusercontent.com/72655347/187848248-7080bcc4-93fb-4384-a1ed-85d020d1244f.png)
+<img src="https://user-images.githubusercontent.com/72655347/187848248-7080bcc4-93fb-4384-a1ed-85d020d1244f.png" width="20%">
 
 fragment是activity的碎片，常用于一个活动中的不同界面
 
 ## 适配器模式
 
-![image-20220901125016287](https://user-images.githubusercontent.com/72655347/187848271-9be9f190-99b2-4089-89f7-5858798ad20f.png)
+<img src="https://user-images.githubusercontent.com/72655347/187848271-9be9f190-99b2-4089-89f7-5858798ad20f.png" width="20%">
 
 使用了设计模式中的适配器模式结合RecycleView实现重复item加载
 
@@ -104,7 +106,8 @@ public boolean checkUsername(String str) {
 
 ### 断网功能测试
 
-![image-20220901132635920](https://user-images.githubusercontent.com/72655347/187848301-38ef77a9-36ee-4182-8b59-3edde5275fb7.png)
+
+<img src="https://user-images.githubusercontent.com/72655347/187848301-38ef77a9-36ee-4182-8b59-3edde5275fb7.png" width="20%">
 ## 5.实际遇到的问题
 
 在联网过程中在Activity由于需要实时加载一些图片的问题。可能会涉及到activity和fragment生命周期的问题，通过使用onResume和不断debug调试解决了问题
